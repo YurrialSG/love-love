@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions CSS</title>
+    <style>
+        body {
+            background-image: url('/img/img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .title {
+            position: absolute;
+            color: whitesmoke;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            font-size: 30px;
+            bottom: 0;
+            animation: move 1s ease-in infinite;
+        }
+
+        @keyframes move{
+            to {
+                opacity: 0;
+            }
+            from {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h2>Te amo meu amorzinho...</h2>
+    </div>
+</body>
+
+</html>
